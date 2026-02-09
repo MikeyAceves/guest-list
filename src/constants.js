@@ -14,7 +14,7 @@ export async function getGuests() {
 
 export async function getGuest(id) {
   try {
-    const response = await fetch(API + id);
+    const response = await fetch(API + "/" + id);
     const result = await response.json();
     return result.data;
   } catch (e) {

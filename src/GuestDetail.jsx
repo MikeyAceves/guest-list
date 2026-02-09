@@ -13,6 +13,7 @@ export default function GuestDetails({ guestId, setGuestId }) {
   }, [guestId]);
 
   if (!guest) return <p>Loading...</p>;
+
   return (
     <article className="guest-details">
       <h1>{guest.name}</h1>
